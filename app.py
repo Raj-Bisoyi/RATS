@@ -20,7 +20,7 @@ def extract_text_from_resume(uploaded_resume):
 
 #get response from the gemini model
 def get_gemini_response(input_prompt):
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-2.0-flash')
     response = model.generate_content(input_prompt)
     return response.text
 
