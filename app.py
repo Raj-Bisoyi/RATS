@@ -5,6 +5,11 @@ import os
 from PyPDF2 import PdfReader
 from dotenv import load_dotenv
 
+headers={
+    "authorization": st.secrets["API_KEY"],
+    "content-type":"application/json"
+}
+    
 load_dotenv()
 
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
