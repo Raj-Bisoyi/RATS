@@ -1,1 +1,1 @@
-# RATS
+# RATS(Resume Application Tracking System)
